@@ -1,5 +1,5 @@
 {% set name = "climada-petals" %}
-{% set version = "3.3.2" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/climada_petals-{{ version }}.tar.gz
-  sha256: 7a39c02bd0002e0aa0a17eb90ed11bb6b45726a4706a4682b5686c0c66832986
+  sha256: 17ef579c750f7260441920f375d3672d2b777564d8988979d65bf7052c8122f0
 
 build:
   noarch: python
@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python =3.9
-    - climada =3.3
-    - scikit-image =0.19
+    - climada =4.0
+    - scikit-image =0.21
 
 test:
   imports:
