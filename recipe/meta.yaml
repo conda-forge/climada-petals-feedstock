@@ -1,5 +1,5 @@
 {% set name = "climada-petals" %}
-{% set version = "4.0.1" %}
+{% set version = "4.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/climada_petals-{{ version }}.tar.gz
-  sha256: d4fca29143d7df663156545a03f1cd8ec1abdba3d6389fe2d6f3bcf7dffcbb5c
+  sha256: 80cc5833c242f5a4f71905d5cbf3c6561808e2e3d367ada2eb1f63211d066b9d
 
 build:
   noarch: python
