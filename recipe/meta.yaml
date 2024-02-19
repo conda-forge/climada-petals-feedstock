@@ -22,7 +22,8 @@ requirements:
   run:
     - python =3.9
     - climada =4.1
-    - overpy>=0.7
+    - osm-flex =1.1
+    - overpy =0.7
     - pymrio =0.5
     - scikit-image =0.22
 
