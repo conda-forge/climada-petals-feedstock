@@ -32,8 +32,8 @@ test:
     - climada_petals
   source_files:
     - climada_petals
-  script: {{ PYTHON }} -m pip install . -vv  # Make sure osm-flex is installed
   commands:
+    - {{ PYTHON }} -m pip install . -vv  # Make sure osm-flex is installed
     - pip check
     - pytest climada_petals/test/test_cropyield_integr.py
   requires:
