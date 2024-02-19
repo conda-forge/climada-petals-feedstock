@@ -21,15 +21,16 @@ requirements:
     - pip
   run:
     - python =3.9
-    - climada =4.0
-    - scikit-image =0.21
+    - climada =4.1
+    - overpy =0.7
+    - pymrio =0.5
+    - scikit-image =0.22
 
 test:
-  imports:
-    - climada_petals
   source_files:
     - climada_petals
   commands:
+    - {{ PYTHON }} -m pip install . -vv  # Make sure osm-flex is installed
     - pip check
     - pytest climada_petals/test/test_cropyield_integr.py
   requires:
