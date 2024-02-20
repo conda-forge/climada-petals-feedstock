@@ -28,6 +28,8 @@ requirements:
     - scikit-image =0.22
 
 test:
+  imports:
+    - climada_petals
   source_files:
     - climada_petals
   commands:
