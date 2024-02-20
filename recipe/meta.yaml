@@ -30,7 +30,7 @@ test:
   source_files:
     - climada_petals
   commands:
-    - pip install . -vv  # Make sure osm-flex is installed
+    - pip install $SRC_DIR -vv  # Make sure osm-flex is installed
     - pip check
     - pytest climada_petals/test/test_cropyield_integr.py
   requires:
