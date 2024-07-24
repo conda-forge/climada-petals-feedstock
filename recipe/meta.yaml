@@ -31,7 +31,6 @@ requirements:
     - rioxarray =0.13
     - ruamel.yaml =0.18
     - scikit-image =0.22
-    - seaborn =0.13
     - xesmf =0.8
 
 test:
