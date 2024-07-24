@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/climada_petals-{{ version }}.tar.gz
-  sha256: ba9ab347bf7c9cab32107a9bb4d5007a5f4ff44ec2b99ccc272c41abc3c4fc7f
+  sha256: d8d10ebe1bd1420422ed4a47d90169d05c74d36cecb9dce75a956df113f51b06
 
 build:
   noarch: python
