@@ -21,11 +21,18 @@ requirements:
     - pip
   run:
     - python >=3.9,<3.12
-    - climada =4.1
+    - climada =5.0
+    - cdsapi =0.6
+    - importlib-metadata =7.2
+    - meson-python =0.15
     - osm-flex =1.1
     - overpy =0.7
     - pymrio =0.5
+    - rioxarray =0.13
+    - ruamel.yaml =0.18
     - scikit-image =0.22
+    - seaborn =0.13
+    - xesmf =0.8
 
 test:
   imports:
