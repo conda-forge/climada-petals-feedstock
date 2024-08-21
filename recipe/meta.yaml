@@ -1,5 +1,5 @@
 {% set name = "climada-petals" %}
-{% set version = "4.1.0" %}
+{% set version = "5.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/climada_petals-{{ version }}.tar.gz
-  sha256: ba9ab347bf7c9cab32107a9bb4d5007a5f4ff44ec2b99ccc272c41abc3c4fc7f
+  sha256: d8d10ebe1bd1420422ed4a47d90169d05c74d36cecb9dce75a956df113f51b06
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -21,11 +21,17 @@ requirements:
     - pip
   run:
     - python >=3.9,<3.12
-    - climada =4.1
+    - climada =5.0
+    - cdsapi =0.6
+    - importlib-metadata =7.2
+    - meson-python =0.15
     - osm-flex =1.1
     - overpy =0.7
     - pymrio =0.5
+    - rioxarray =0.13
+    - ruamel.yaml =0.18
     - scikit-image =0.22
+    - xesmf =0.8
 
 test:
   imports:
@@ -36,8 +42,9 @@ test:
     - pip check
     - pytest climada_petals/test/test_cropyield_integr.py
   requires:
-    - pip
+    - pip =24.0
     - pytest
+    - pytest-json-report
 
 about:
   home: https://github.com/CLIMADA-project/climada_petals
