@@ -42,7 +42,7 @@ test:
     - pip check
     - pytest climada_petals/test/test_cropyield_integr.py
   requires:
-    - pip
+    - pip =24.0
     - pytest
     - pytest-json-report
 
