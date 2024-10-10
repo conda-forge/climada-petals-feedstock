@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -28,7 +28,7 @@ requirements:
     - osm-flex =1.1
     - overpy =0.7
     - pymrio =0.5
-    - rioxarray =0.13
+    - rioxarray =0.15
     - ruamel.yaml =0.18
     - scikit-image =0.22
     - xesmf =0.8
