@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -30,7 +30,7 @@ requirements:
     - pymrio =0.5
     - rioxarray =0.15
     - ruamel.yaml =0.18
-    - scikit-image =0.22
+    - scikit-image =0.20
     - xesmf =0.8
 
 test:
