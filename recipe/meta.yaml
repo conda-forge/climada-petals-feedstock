@@ -12,13 +12,14 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 3
+  number: 4
 
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools-scm
     - pip
+    - setuptools
+    - setuptools-scm
   run:
     - python >={{ python_min }},<3.12
     - climada =5.0
@@ -52,9 +53,12 @@ about:
   summary: "CLIMADA-Petals: The extension module for CLIMADA (probabilistic natural catastrophe impact model in Python)"
   description: |
     CLIMADA Petals generates different types of hazards and contains more specialized
-    applications than the CLIMADA Core module. CLIMADA stands for CLIMate ADAptation and
-    is a probabilistic natural catastrophe impact model, that also calculates averted
-    damage (benefit) thanks to adaptation measures of any kind.
+    applications than the CLIMADA Core module.
+    CLIMADA (CLIMate ADAptation) is a free and open-source software framework
+    for climate risk assessment and adaptation option appraisal. Designed by a
+    large scientific community, it helps reasearchers, policymakers, and
+    businesses analyse the impacts of natural hazards and explore adaptation
+    strategies.
   license: GPL-3.0-only
   license_file: LICENSE
   doc_url: https://climada-petals.readthedocs.io/en/stable/
