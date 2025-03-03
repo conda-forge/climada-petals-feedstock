@@ -12,9 +12,12 @@ Summary: CLIMADA-Petals: The extension module for CLIMADA (probabilistic natural
 Documentation: https://climada-petals.readthedocs.io/en/stable/
 
 CLIMADA Petals generates different types of hazards and contains more specialized
-applications than the CLIMADA Core module. CLIMADA stands for CLIMate ADAptation and
-is a probabilistic natural catastrophe impact model, that also calculates averted
-damage (benefit) thanks to adaptation measures of any kind.
+applications than the CLIMADA Core module.
+CLIMADA (CLIMate ADAptation) is a free and open-source software framework
+for climate risk assessment and adaptation option appraisal. Designed by a
+large scientific community, it helps reasearchers, policymakers, and
+businesses analyse the impacts of natural hazards and explore adaptation
+strategies.
 
 
 Current build status
