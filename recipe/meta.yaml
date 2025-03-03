@@ -1,5 +1,5 @@
 {% set name = "climada-petals" %}
-{% set version = "5.0.0" %}
+{% set version = "6.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 4
+  number: 0
 
 requirements:
   host:
@@ -22,16 +22,17 @@ requirements:
     - setuptools-scm
   run:
     - python >={{ python_min }},<3.12
-    - climada =5.0
-    - cdsapi =0.6
-    - importlib-metadata =7.2
+    - climada =6.0
+    - boario =0.5
+    - cdsapi =0.7
+    - esmpy =8.4.2
+    - importlib-metadata <8.0
+    - meson =1.4
     - meson-python =0.15
-    - osm-flex =1.1
-    - overpy =0.7
     - pymrio =0.5
-    - rioxarray =0.15
+    - rioxarray =0.18
     - ruamel.yaml =0.18
-    - scikit-image >=0.20
+    - scikit-image =0.25
     - xesmf =0.8
 
 test:
