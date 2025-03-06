@@ -1,5 +1,5 @@
 {% set name = "climada-petals" %}
-{% set version = "5.0.0" %}
+{% set version = "6.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/climada_petals-{{ version }}.tar.gz
-  sha256: d8d10ebe1bd1420422ed4a47d90169d05c74d36cecb9dce75a956df113f51b06
+  sha256: 488136239a3c97b1cec8c38b58063f2a7156ec213814cc74efd508c9ce3ae5a0
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 4
+  number: 0
 
 requirements:
   host:
@@ -22,16 +22,18 @@ requirements:
     - setuptools-scm
   run:
     - python >={{ python_min }},<3.12
-    - climada =5.0
-    - cdsapi =0.6
+    - climada =6.0
+    - boario =0.5
+    - cdsapi =0.7
+    - esmpy =8.4.2
     - importlib-metadata =7.2
+    - libgdal =3.10
+    - meson =1.4
     - meson-python =0.15
-    - osm-flex =1.1
-    - overpy =0.7
     - pymrio =0.5
-    - rioxarray =0.15
+    - rioxarray =0.18
     - ruamel.yaml =0.18
-    - scikit-image >=0.20
+    - scikit-image >0.20
     - xesmf =0.8
 
 test:
