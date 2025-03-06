@@ -26,14 +26,14 @@ requirements:
     - boario =0.5
     - cdsapi =0.7
     - esmpy =8.4.2
-    - importlib-metadata <8.0
+    - importlib-metadata =7.2
     - libgdal =3.10
     - meson =1.4
     - meson-python =0.15
     - pymrio =0.5
     - rioxarray =0.18
     - ruamel.yaml =0.18
-    - scikit-image =0.25
+    - scikit-image >0.20
     - xesmf =0.8
 
 test:
