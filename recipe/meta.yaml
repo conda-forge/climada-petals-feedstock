@@ -21,19 +21,21 @@ requirements:
     - setuptools
     - setuptools-scm
   run:
-    - python >={{ python_min }},<3.12
-    - climada =6.0
-    - boario =0.5
+    - python >={{ python_min }},<3.13
+    - climada =6.1
+    - boario >=0.6.2
     - cdsapi =0.7
-    - esmpy =8.4.2
+    - esmpy =8.9
     - importlib-metadata =7.2
     - libgdal =3.10
     - meson =1.4
-    - meson-python =0.15
-    - pymrio =0.5
-    - rioxarray =0.18
+    - meson-python =0.18
+    - osm-flex =1.1
+    - overpy =0.7
+    - pymrio =0.6
+    - rioxarray =0.19
     - ruamel.yaml =0.18
-    - scikit-image >0.20
+    - scikit-image >0.25
     - xesmf =0.8
 
 test:
