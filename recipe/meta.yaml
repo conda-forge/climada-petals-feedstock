@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -25,7 +25,7 @@ requirements:
     - climada =6.1
     - boario >=0.6.2
     - cdsapi =0.7
-    - esmpy =8.9
+    - esmpy >=8.4
     - importlib-metadata =7.2
     - libgdal =3.10
     - meson =1.4
