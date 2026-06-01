@@ -20,6 +20,8 @@ requirements:
     - pip
     - setuptools
     - setuptools-scm
+    - meson =1.4
+    - meson-python =0.18
   run:
     - python >={{ python_min }},<3.13
     - climada =6.1
@@ -27,9 +29,6 @@ requirements:
     - cdsapi =0.7
     - esmpy >=8.4
     - importlib-metadata =7.2
-    - libgdal =3.10
-    - meson =1.4
-    - meson-python =0.18
     - osm-flex =1.1
     - overpy =0.7
     - pymrio >=0.4.8
