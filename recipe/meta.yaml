@@ -29,6 +29,7 @@ requirements:
     - cdsapi =0.7
     - esmpy >=8.4
     - importlib-metadata =7.2
+    - libgdal =3.10
     - osm-flex =1.1
     - overpy =0.7
     - pymrio >=0.4.8
