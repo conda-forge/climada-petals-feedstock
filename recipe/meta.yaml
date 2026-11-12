@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -29,15 +29,15 @@ requirements:
     - cdsapi =0.7
     - esmpy >=8.4
     - importlib-metadata =7.2
-    - libgdal =3.10
+    - libgdal >=3.10
     - osm-flex =1.1
     - overpy =0.7
-    - pymoo =0.6.1
+    - pymoo =0.6
     - pymrio >=0.4.8
-    - rioxarray =0.19
-    - ruamel.yaml =0.18
-    - scikit-image >0.25
-    - xesmf =0.8
+    - rioxarray >=0.19
+    - ruamel.yaml >=0.18
+    - scikit-image >=0.26
+    - xesmf >=0.8
 
 test:
   imports:
@@ -48,7 +48,8 @@ test:
     - pip check
     - pytest climada_petals/test/test_cropyield_integr.py
   requires:
-    - pip =24.0
+    - lxml
+    - pip
     - pytest
     - pytest-json-report
     - python {{ python_min }}
