@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 3
 
 requirements:
   host:
@@ -30,6 +30,7 @@ requirements:
     - esmpy >=8.4
     - importlib-metadata =7.2
     - libgdal >=3.10
+    - lxml >=6.1
     - osm-flex =1.1
     - overpy =0.7
     - pymoo =0.6
@@ -48,7 +49,6 @@ test:
     - pip check
     - pytest climada_petals/test/test_cropyield_integr.py
   requires:
-    - lxml
     - pip
     - pytest
     - pytest-json-report
